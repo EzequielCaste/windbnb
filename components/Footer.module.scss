@@ -1,0 +1,27 @@
+@import '../styles/_globals.scss';
+
+.footer {
+  padding-top: 24px;
+  width: 90%;
+  font-size: 12px;
+  margin: 16px auto; 
+  color: $text-200;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  svg {
+    width: 16px;
+  }
+  a {
+    margin-left: 4px;
+    color: $text-200;
+    font-weight: 600;
+    text-decoration: none;
+  }
+}
+.icons {
+  svg {
+    font-size: 12px;
+  }
+}

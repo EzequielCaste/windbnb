@@ -6,9 +6,11 @@ import styles from '../styles/Home.module.scss';
 import stays from '../stays.json';
 
 import { HouseCard } from '../components/HouseCard';
+import {Footer} from '../components/Footer';
 
 export default function Home() {
   return (
+    <>
     <div className={styles.container}>
       <Head>
         <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -31,12 +33,14 @@ export default function Home() {
         <section className={styles.cardContainer}>
           {
             stays.map( stay => {
-              return <HouseCard stay={stay} />;
+              return <HouseCard key={stay.title} stay={stay} />;
             }
             )
           }
         </section>
-      </main>
+      </main>      
     </div>
+    <Footer />
+    </>
   );
 }

@@ -5,8 +5,7 @@ import { faStar } from '@fortawesome/free-solid-svg-icons';
 
 
 export const HouseCard = ({stay}) => {
-  const {photo,name,superHost,type,beds,rating,title} = stay;
-  console.log(beds);
+  const {photo,name,superHost,type,beds,rating,title} = stay; 
   return (
     <div>
       <img src={photo} alt={`Image for ${name}`} />

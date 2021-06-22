@@ -39,14 +39,14 @@ export const Input = () => {
           placeholder="Helsinki, Finland"
           name="location-input"
           className={styles['input-location']}
-          value={location && location}
+          defaultValue={location && location}
         />
         <input
           onFocus={toggleCustomSearch}
           name="guests-input"
           className={styles['input-guests']}
           placeholder="Add guests"
-          value={guests == 0 ? 'Add guests' : guests}
+          defaultValue={guests == 0 ? 'Add guests' : guests}
         />
         <div className={styles['search-btn']}>
           <Search />
