@@ -25,3 +25,8 @@
     font-size: 12px;
   }
 }
+@media all and (min-width: 700px) {
+  .footer {
+    justify-content: center;
+  }
+}
